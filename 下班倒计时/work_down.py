@@ -88,11 +88,11 @@ if __name__ == "__main__":
     # 下班时间-小时
     work_hour = StringVar()
     Entry(tk_obj, textvariable=work_hour, width=2, font='宋体 12').place(x=160, y=115)
-    work_hour.set('18')
+    work_hour.set('17')
     # 下班时间-分钟
     work_minute = StringVar()
     Entry(tk_obj, textvariable=work_minute, width=2, font='宋体 12').place(x=185, y=115)
-    work_minute.set('00')
+    work_minute.set('30')
     # 下班时间-秒数
     work_second = StringVar()
     Entry(tk_obj, textvariable=work_second, width=2, font='宋体 12').place(x=210, y=115)
