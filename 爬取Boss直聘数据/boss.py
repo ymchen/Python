@@ -31,7 +31,8 @@ class GetBossData(object):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
             'cookie': cookie
         }
-        request = requests.get(url=url, headers=header, proxies=proxies, timeout=3)
+        # request = requests.get(url=url, headers=header, proxies=proxies, timeout=3)
+        request = requests.get(url=url, headers=header, timeout=3)
         html = False
         if request.status_code == 200:
             html = request.content
